@@ -1,8 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import About from './components/About';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react'
 import Alert from './components/Alert';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom'
+
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -19,7 +26,16 @@ function App() {
     }, 2000)
 
   }
-  const toggleMode = () => {
+  const removeBodyClasses=()=>{
+    document.body.classList.remove('bg-light')
+    document.body.classList.remove('bg-dark')
+    document.body.classList.remove('bg-warning')
+    document.body.classList.remove('bg-danger')
+    document.body.classList.remove('bg-success')
+  }
+  const toggleMode = (cls) => {
+    removeBodyClasses();
+    document.body.classList.add('bg-'+cls)
     if (mode === 'light') {
       setMode('dark')
       document.body.style.backgroundColor = '#042743'
@@ -33,17 +49,23 @@ function App() {
   }
   return (
     <>
-        {/* {<Router>} */}
-          <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
-          <Alert alert={alert}/>
-          <div className="container my-3">
-      
-         {/*<About  mode={mode} */}
-         <TextForm heading="Try TextUtils - word counter, character counter, remove extra spaces" showAlert={showAlert}  mode={mode}/>
-               
-          </div>
-           </>
-    
+      <Router>
+      <Navbar title="Word Player" mode={mode} toggleMode={toggleMode}  />
+      <Alert alert={alert} />
+      <div className="container my-3">
+        <Switch>
+          <Route exact path="/">
+            <TextForm showAlert={showAlert} heading="Word Player - Word Counter, Character Counter, Remove extra space" mode={mode} />
+          </Route>
+          <Route exact path="/about">
+            <About mode={mode} />
+          </Route>
+        </Switch>
+      </div>
+      </Router>
+
+    </>
+
   );
 }
 
