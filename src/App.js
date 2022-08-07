@@ -7,7 +7,7 @@ import Alert from './components/Alert';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,Redirect
 } from 'react-router-dom'
 
 
@@ -54,12 +54,13 @@ function App() {
       <Alert alert={alert} />
       <div className="container my-3">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/home">
             <TextForm showAlert={showAlert} heading="Word Player - Word Counter, Character Counter, Remove extra space" mode={mode} />
           </Route>
           <Route exact path="/about">
             <About mode={mode} />
           </Route>
+          <Redirect exact from="/WordPlayer" to="/home" />
         </Switch>
       </div>
       </Router>
