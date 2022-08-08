@@ -1,15 +1,15 @@
 {
-  "files": {
-    "main.css": "/WordPlayer/static/css/main.073c9b0a.css",
-    "main.js": "/WordPlayer/static/js/main.5f1848e3.js",
-    "static/js/787.9efec1c7.chunk.js": "/WordPlayer/static/js/787.9efec1c7.chunk.js",
-    "index.html": "/WordPlayer/index.html",
-    "main.073c9b0a.css.map": "/WordPlayer/static/css/main.073c9b0a.css.map",
-    "main.5f1848e3.js.map": "/WordPlayer/static/js/main.5f1848e3.js.map",
-    "787.9efec1c7.chunk.js.map": "/WordPlayer/static/js/787.9efec1c7.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.5f1848e3.js"
-  ]
+  "main.css": "/WordPlayer/static/css/main.a59d8f14.chunk.css",
+  "main.js": "/WordPlayer/static/js/main.c023cdb8.chunk.js",
+  "main.js.map": "/WordPlayer/static/js/main.c023cdb8.chunk.js.map",
+  "static/js/1.281e3189.chunk.js": "/WordPlayer/static/js/1.281e3189.chunk.js",
+  "static/js/1.281e3189.chunk.js.map": "/WordPlayer/static/js/1.281e3189.chunk.js.map",
+  "static/js/2.92d49ecc.chunk.js": "/WordPlayer/static/js/2.92d49ecc.chunk.js",
+  "static/js/2.92d49ecc.chunk.js.map": "/WordPlayer/static/js/2.92d49ecc.chunk.js.map",
+  "runtime~main.js": "/WordPlayer/static/js/runtime~main.645c8a66.js",
+  "runtime~main.js.map": "/WordPlayer/static/js/runtime~main.645c8a66.js.map",
+  "static/css/main.a59d8f14.chunk.css.map": "/WordPlayer/static/css/main.a59d8f14.chunk.css.map",
+  "index.html": "/WordPlayer/index.html",
+  "precache-manifest.6425d520c04001f89fc38bc49545ec1c.js": "/WordPlayer/precache-manifest.6425d520c04001f89fc38bc49545ec1c.js",
+  "service-worker.js": "/WordPlayer/service-worker.js"
 }
